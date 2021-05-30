@@ -1,4 +1,4 @@
-const $url = "http://localhost:8080";
+const $url = "http://woowachess.kro.kr:8080";
 const $gameList = document.querySelector("#gameList");
 const $mainBtn = document.querySelector("#main-btn");
 

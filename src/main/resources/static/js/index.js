@@ -1,6 +1,6 @@
 const $start = document.querySelector("#start-btn");
 const $gameList = document.querySelector("#gameList-btn");
-const $url = "http://localhost:8080";
+const $url = "http://woowachess.kro.kr:8080";
 
 $start.addEventListener("click", startGame);
 $gameList.addEventListener("click", roomList);

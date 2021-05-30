@@ -5,7 +5,10 @@ import chess.controller.web.dto.history.HistoryResponseDto;
 import chess.controller.web.dto.move.MoveRequestDto;
 import chess.controller.web.dto.move.PathResponseDto;
 import chess.controller.web.dto.piece.PieceResponseDto;
-import chess.service.*;
+import chess.service.GameService;
+import chess.service.HistoryService;
+import chess.service.MovePathService;
+import chess.service.MoveService;
 import chess.service.dto.history.HistoryDto;
 import chess.service.dto.move.MoveDto;
 import chess.service.dto.piece.PieceDto;
@@ -38,7 +41,7 @@ public class GameRestController {
 
     @GetMapping("/{id}")
     public ResponseEntity<GameResponseDto> findGameByGameId(@PathVariable final Long id) {
-        GameResponseDto gameResponseDto = new ModelMapper().map(gameService.findById(id), GameResponseDto.class);
+        GameResponseDto gameResponseDto = modelMapper.map(gameService.findById(id), GameResponseDto.class);
         return ResponseEntity.ok().body(gameResponseDto);
     }
 

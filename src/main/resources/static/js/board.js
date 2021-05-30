@@ -1,4 +1,4 @@
-const $url = "http://localhost:8080/games/";
+const $url = "http://woowachess.kro.kr:8080/games/";
 const $board = document.querySelector("#main");
 const $sidebar = document.querySelector("#menu-container");
 const $roomId = document.querySelector("#room-id").innerHTML;
