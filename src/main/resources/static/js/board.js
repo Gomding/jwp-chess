@@ -44,7 +44,7 @@ async function loadBoard() {
                     const $imgTag = document.createElement("img");
                     $imgTag.classList.add("piece");
                     $imgTag.classList.add("black");
-                    $imgTag.src = "../images/b" + $symbol + ".png";
+                    $imgTag.src = "../images/b" + $symbol.toLowerCase() + ".png";
                     $board.querySelector("#" + $position).appendChild($imgTag);
                 }
             }
